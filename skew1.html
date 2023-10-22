@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skew Transformation Example</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+/*            transition: transform 1s ease;*/
+	    transition-property: transform;
+	    transition-duration: 1s;
+	    transition-timing-function: ease;
+        }
+
+        /* Apply the skew transformation on hover */
+        .box:hover {
+            transform: skew(30deg, 20deg) translate(50px, 50px) ; /* Skew the box by 30 degrees horizontally and 20 degrees vertically on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
+

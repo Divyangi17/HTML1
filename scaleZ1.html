@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScaleZ Transformation Example</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transition: transform 1s ease;
+        }
+
+        /* Apply the scaleY transformation on hover 
+        scaleZ(2) translateZ(300px) is the equivalent of translateZ(600px)
+        */
+        .box:hover {
+            transform: perspective(1000px) scaleZ(2) translateZ(300px); 
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
+

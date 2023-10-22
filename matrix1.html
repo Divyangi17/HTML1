@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Transformation Example</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transition: transform 1s ease;
+        }
+
+        /* Apply the matrix transformation on hover */
+        /*matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+        .box:hover {
+            transform: matrix(1, 0.5, -0.5, 1, 50, 50);
+            /* Apply a custom 2D transformation matrix:
+               | 1   0.5 |
+               | -0.5  1 |
+               Translation: 50px right, 50px down */
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
+

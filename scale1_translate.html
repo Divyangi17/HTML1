@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scale and Translate Transformation Example</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transition: transform 1s ease;
+        }
+
+        /* Apply the scale and translate transformations on hover */
+        .box:hover {
+            transform: scale(1.5) translate(50px, 50px);
+            /* Scale the box by 1.5 times and move it 50px right and 50px down on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
+
