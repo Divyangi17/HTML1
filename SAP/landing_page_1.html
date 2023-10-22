@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+    <title>TAS</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura">
+    <style>
+        
+        h1{
+            font-family: 'Allura', sans-serif;
+            font-size: 50px;
+	    margin-bottom: -10%;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding:0px;
+            height:100px;
+            position:fixed;
+            width:100%;
+            top:0px;
+        }  
+        a{
+        color:white;
+        }      
+        .product-container {
+            max-width: 800px;
+            min-height:500px;
+            margin: 10% auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }        
+        .product-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }        
+        .product-description {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }        
+        .product-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007BFF;
+        }        
+        .product-image {
+            max-width: 100%;
+            margin: 20px 0;
+        }
+        .page-head{
+            height:50px;
+        }
+        #mysvg{
+            margin-top:20%;
+        }
+        #menu{
+            float:left;
+            padding-left: 20%;
+            padding-top: 4%;
+            font-size:25px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div style="float:left">
+    	<svg id="mysvg" height="150" width="150">
+  		<circle cx="65" cy="60" r="60" stroke="#333" stroke-width="6" fill="yellow" />
+    	</svg>
+    </div>
+    <div style="float:left">
+        <h1>TAS</h1>
+    </div>
+    <div id="menu">
+    	<a href="#product">Products</a> |
+    	<a href="#about">About</a> |
+    	<a href="#contact">Contact</a>
+    </div>
+    <div style="float:right">
+        <a>Login</a>
+    </div>
+       
+        
+
+    
+    </header>    
+    <div id="product" class="page-head" ></div>
+    <div  class="product-container">
+    <h2 class="product-title">Products</h2>
+    <div style="float:left;width:50%">
+    
+        <img class="product-image" src="product1.jpeg" alt="Product Image">
+        
+        <h2 class="product-title">Product Name</h2>
+        <p class="product-description">
+            This is a fantastic product description. 
+        </p>
+        <p class="product-price">$99.99</p>
+    </div>
+    <div style="float:right;width:50%">
+    
+        <img class="product-image" src="product1.jpeg" alt="Product Image">
+        
+        <h2 class="product-title">Product Name</h2>
+        <p class="product-description">
+            This is a fantastic product description. 
+        </p>
+        <p class="product-price">$99.99</p>
+    </div>
+    	
+    </div>
+    
+        <div id="about" class="page-head" ></div>
+    <div  class="product-container">
+    	<h2 class="product-title">About Us</h2>
+        <p class="product-description">
+            This is about page.
+        </p>
+       
+    </div>
+    
+        <div id="contact" class="page-head" ></div>
+    <div  class="product-container">
+    	<h2 class="product-title">Contact Us</h2>
+        <p class="product-description">
+            This is contact page.
+        </p>
+       
+    </div>
+    
+
+</body>
+</html>
+
